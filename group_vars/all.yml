@@ -1,0 +1,7 @@
+---
+java_set_javahome: true
+java_version: 8
+java_subversion: 161
+java_download_from_oracle: false
+java_remove_download: false
+file_home: /home/thet/Dropbox/Ubuntu

@@ -1,0 +1,8 @@
+---
+- name: Install snaps
+  become: true
+  command: "snap install {{item}}"
+  with_items:
+    - vlc
+    - spotify
+    - keepassxc

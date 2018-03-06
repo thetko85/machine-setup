@@ -1,0 +1,6 @@
+- src: Tahvok.vim
+  version: v1.0
+- src: cmprescott.chrome
+  version: 0.2.4
+- src: williamyeh.oracle-java
+  version: 2.11.0

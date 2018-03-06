@@ -1,0 +1,8 @@
+---
+- name: Link the jdk file
+  file:
+    src: "{{file_home}}/jdk-{{java_version}}u{{java_subversion}}-linux-x64.tar.gz"
+    dest: "{{playbook_dir}}/files/jdk-{{java_version}}u{{java_subversion}}-linux-x64.tar.gz"
+    state: link
+- include_role:
+    name: williamyeh.oracle-java
