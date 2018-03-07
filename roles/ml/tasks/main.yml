@@ -1,0 +1,17 @@
+---
+- name: Create ML directory
+  file: path=~/ML state=directory
+- name: Install virtualenv
+  become: true
+  apt:
+    pkg: virtualenv
+- name: Install ML libraries
+  pip:
+    name: "{{item}}"
+    virtualenv: "~/ML"
+  with_items:
+    - numpy
+    - scipy
+    - pandas
+    - matplotlib
+
