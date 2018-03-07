@@ -1,0 +1,10 @@
+---
+- name: Download Hipchat
+  become: true
+  get_url:
+    url: https://atlassian.artifactoryonline.com/atlassian/hipchat-apt-client/pool/HipChat4-4.30.3.1670-Linux.deb
+    dest: /tmp/hipchat.deb
+- name: Install Hipchat
+  become: true
+  apt:
+    deb: /tmp/hipchat.deb

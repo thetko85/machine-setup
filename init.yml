@@ -8,6 +8,8 @@
     - {role: cmprescott.chrome, become: true}
     - {role: jdk, become: true}
     - ml
+    - hipchat
+    - ide
   tasks:
     - name: Instal packages
       become: true
