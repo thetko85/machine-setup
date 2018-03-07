@@ -4,3 +4,5 @@
   version: 0.2.4
 - src: williamyeh.oracle-java
   version: 2.11.0
+- src: geerlingguy.docker
+  version: 2.1.0

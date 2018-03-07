@@ -10,6 +10,7 @@
     - ml
     - hipchat
     - ide
+    - {role: geerlingguy.docker, become: true}
   tasks:
     - name: Instal packages
       become: true
